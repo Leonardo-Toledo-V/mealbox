@@ -2,6 +2,7 @@ import React from 'react'
 import Prices from '@/components/Home/Prices'
 import Stats from '@/components/Home/Stats'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const offers = [
     { name: 'Personaliza tu caja', description: 'Crea tu propio plan personalizado' },
@@ -47,12 +48,12 @@ export default function Main() {
                                         Deja que MealBox sea tu aliado en la búsqueda de una alimentación saludable y sin preocupaciones.
                                     </p>
                                     <div className="mt-6">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            href="/home"
                                             className="inline-block rounded-md border border-transparent bg-[#22874a] py-3 px-8 font-medium text-white hover:bg-[#489a69] duration-300"
                                         >
                                             Ver más
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

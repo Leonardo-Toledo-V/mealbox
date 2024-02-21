@@ -85,14 +85,18 @@ export default function Navbar({ isActive, isActive2, userActive }: NavbarProps)
                                             <div className="grid grid-cols-1 items-start gap-y-10 gap-x-6">
                                                 <div className="grid grid-cols-1 gap-y-10 gap-x-6">
                                                     <div>
-                                                        <p className="font-medium text-gray-900">
+                                                        <Link 
+                                                        href='/menus'
+                                                        className="font-medium text-gray-900">
                                                             Menús
-                                                        </p>
+                                                        </Link>
                                                     </div>
                                                     <div>
-                                                        <p id="mobile-categories-heading" className="font-medium text-gray-900">
+                                                        <Link 
+                                                        href='/menus'
+                                                        id="mobile-categories-heading" className="font-medium text-gray-900">
                                                             Recetas
-                                                        </p>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -104,14 +108,18 @@ export default function Navbar({ isActive, isActive2, userActive }: NavbarProps)
                                             <div className="grid grid-cols-1 items-start gap-y-10 gap-x-6">
                                                 <div className="grid grid-cols-1 gap-y-10 gap-x-6">
                                                     <div>
-                                                        <p className="font-medium text-gray-900">
+                                                        <Link 
+                                                        href='/prices'
+                                                        className="font-medium text-gray-900">
                                                             Precios
-                                                        </p>
+                                                        </Link>
                                                     </div>
                                                     <div>
-                                                        <p id="mobile-categories-heading" className="font-medium text-gray-900">
+                                                        <Link
+                                                        href='/prices'
+                                                        id="mobile-categories-heading" className="font-medium text-gray-900">
                                                             Paquetes
-                                                        </p>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>

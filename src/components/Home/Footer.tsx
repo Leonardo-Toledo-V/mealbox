@@ -22,7 +22,7 @@ export default function Footer() {
                             <Image
                                 width="1105"
                                 height="684"
-                                src="logo.png"
+                                src="/logo.png"
                                 alt=""
                                 className="h-16 w-auto"
                             />
@@ -63,7 +63,7 @@ export default function Footer() {
                                 <Image
                                     width="3000"
                                     height="2000"
-                                    src="img3.jpeg"
+                                    src="/img3.jpeg"
                                     alt=""
                                     className="h-full w-full object-cover object-center saturate-0 filter"
                                 />

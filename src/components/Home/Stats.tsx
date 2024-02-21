@@ -9,7 +9,7 @@ export default function Stats() {
                     width="2000"
                     height="2000"
                     className="h-full w-full object-cover"
-                    src="img2.jpeg"
+                    src="/img2.jpeg"
                     alt="Support team"
                 />
             </div>
