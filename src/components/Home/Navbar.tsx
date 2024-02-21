@@ -9,12 +9,13 @@ import Image from 'next/image'
 interface NavbarProps {
     isActive?: boolean;
     isActive2?: boolean;
+    userActive?: boolean;
 }
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
-export default function Navbar({ isActive, isActive2 }: NavbarProps) {
+export default function Navbar({ isActive, isActive2, userActive }: NavbarProps) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <>

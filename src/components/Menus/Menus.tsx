@@ -4,30 +4,30 @@ const menus = [
     {
         title: 'Desayunos y comidas.',
         href: '#',
-        category: { name: 'Menú 1'},
+        category: { name: 'Menú 1' },
         description:
             'Despierta con energía con nuestro delicioso desayuno energético. Repleto de frutas frescas, granola casera y yogur natural, es la forma perfecta de comenzar tu día.',
-        date: 'Mar 16, 2020',
+        date: 'Feb 16, 2024',
         imageUrl:
             '/menu1.png',
     },
     {
         title: 'Ensaladas y sándiwches.',
         href: '#',
-        category: { name: 'Menú 2'},
+        category: { name: 'Menú 2' },
         description:
             'Disfruta del frescor del Mediterráneo con nuestra ensalada mediterránea. Ingredientes cuidadosamente seleccionados como tomates cherry, pepinos, aceitunas y queso feta te transportarán a las costas griegas en cada bocado.',
-        date: 'Mar 10, 2020',
+        date: 'Feb 10, 2024',
         imageUrl:
             '/menu2.png',
     },
     {
         title: 'Colaciones, jugos y extras.',
         href: '#',
-        category: { name: 'Menú 3'},
+        category: { name: 'Menú 3' },
         description:
             '¿Necesitas un impulso de energía entre comidas? Nuestros snacks saludables son la respuesta perfecta. Desde barras de cereales caseras hasta crudités frescos con hummus, tenemos opciones deliciosas y nutritivas para satisfacer tus antojos.',
-        date: 'Feb 12, 2020',
+        date: 'Feb 12, 2024',
         imageUrl:
             '/menu3.png',
     },
@@ -52,11 +52,11 @@ export default function Menus() {
                         <div key={menu.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
                             <div className="flex-shrink-0">
                                 <Image
-                                width="946"
-                                height="1660"
-                                className="h-full w-full object-cover" 
-                                src={menu.imageUrl} 
-                                alt="" />
+                                    width="946"
+                                    height="1660"
+                                    className="h-full w-full object-cover"
+                                    src={menu.imageUrl}
+                                    alt="" />
                             </div>
                             <div className="flex flex-1 flex-col justify-between bg-white p-6">
                                 <div className="flex-1">
@@ -68,6 +68,17 @@ export default function Menus() {
                                     <div className="mt-2 block">
                                         <p className="text-xl font-semibold text-[#22874a]">{menu.title}</p>
                                         <p className="mt-3 text-base text-gray-500">{menu.description}</p>
+                                    </div>
+                                </div>
+                                <div className="mt-6">
+                                    <div className="rounded-lg shadow-md">
+                                        <a
+                                            href="#"
+                                            className="block w-full rounded-lg border border-transparent bg-[#22874a] px-3 py-3 text-center text-base font-medium leading-6 text-white hover:bg-[#489a69] duration-300 "
+                                            aria-describedby="tier-growth"
+                                        >
+                                            Descubrir más
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="mt-6 flex items-center">
