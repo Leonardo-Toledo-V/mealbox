@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const footerNavigation = {
@@ -18,7 +19,9 @@ export default function Footer() {
                 <div className="border-t border-gray-200">
                     <div className="pt-16 pb-20">
                         <div className="md:flex md:justify-center">
-                            <img
+                            <Image
+                                width="1105"
+                                height="684"
                                 src="logo.png"
                                 alt=""
                                 className="h-16 w-auto"
@@ -57,7 +60,9 @@ export default function Footer() {
 
                         <div className="relative mt-6 flex items-center py-12 px-6 sm:py-16 sm:px-10 lg:mt-0">
                             <div className="absolute inset-0 overflow-hidden rounded-lg">
-                                <img
+                                <Image
+                                    width="3000"
+                                    height="2000"
                                     src="img3.jpeg"
                                     alt=""
                                     className="h-full w-full object-cover object-center saturate-0 filter"
@@ -96,7 +101,9 @@ export default function Footer() {
 
                         <div className="ml-6 border-l border-gray-200 pl-6">
                             <a href="#" className="flex items-center text-gray-500 hover:text-gray-600">
-                                <img
+                                <Image
+                                    width="100"
+                                    height="100"
                                     src="mexico.svg"
                                     alt="mexico-flag"
                                     className="h-auto w-8 flex-shrink-0"

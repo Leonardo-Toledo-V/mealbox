@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 const menus = [
     {
@@ -72,13 +73,13 @@ export default function Menus() {
                                 </div>
                                 <div className="mt-6">
                                     <div className="rounded-lg shadow-md">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            href="/home"
                                             className="block w-full rounded-lg border border-transparent bg-[#22874a] px-3 py-3 text-center text-base font-medium leading-6 text-white hover:bg-[#489a69] duration-300 "
                                             aria-describedby="tier-growth"
                                         >
                                             Descubrir más
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="mt-6 flex items-center">

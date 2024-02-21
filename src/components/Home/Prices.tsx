@@ -18,7 +18,6 @@ export default function Prices() {
                     </p>
                 </div>
             </div>
-
             <div className="mt-16 bg-white pb-12 lg:mt-20 lg:pb-28">
                 <div className="relative z-0">
                     <div className="absolute inset-0 h-5/6 bg-[#222222] lg:h-2/3" />

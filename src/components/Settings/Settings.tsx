@@ -10,6 +10,7 @@ import {
     SquaresPlusIcon,
     UserCircleIcon,
 } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 
 
@@ -46,22 +47,13 @@ export default function Ejemplo() {
 
     return (
         <>
-            {/*
-        Este ejemplo requiere actualizar su plantilla:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
             <div className="h-full">
-
                 <main className="mx-auto max-w-7xl pb-10 lg:py-12 lg:px-8">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-x-5">
                         <aside className="py-6 px-2 sm:px-6 lg:col-span-3 lg:py-0 lg:px-0">
                             <nav className="space-y-1">
                                 {subNavegacion.map((item) => (
-                                    <a
+                                    <Link
                                         key={item.nombre}
                                         href={item.href}
                                         className={classNames(
@@ -80,12 +72,10 @@ export default function Ejemplo() {
                                             aria-hidden="true"
                                         />
                                         <span className="truncate">{item.nombre}</span>
-                                    </a>
+                                    </Link>
                                 ))}
                             </nav>
                         </aside>
-
-                        {/* Detalles de pago */}
                         <div className="space-y-6 sm:px-6 lg:col-span-9 lg:px-0">
                             <section aria-labelledby="payment-details-heading">
                                 <form action="#" method="POST">
@@ -99,7 +89,6 @@ export default function Ejemplo() {
                                                     Actualiza tu información de facturación. Ten en cuenta que actualizar tu ubicación podría afectar tus tasas impositivas.
                                                 </p>
                                             </div>
-
                                             <div className="mt-6 grid grid-cols-4 gap-6">
                                                 <div className="col-span-4 sm:col-span-2">
                                                     <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
@@ -113,7 +102,6 @@ export default function Ejemplo() {
                                                         className="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-gray-900 focus:outline-none focus:ring-gray-900 sm:text-sm"
                                                     />
                                                 </div>
-
                                                 <div className="col-span-4 sm:col-span-2">
                                                     <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
                                                         Apellido
@@ -126,7 +114,6 @@ export default function Ejemplo() {
                                                         className="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-gray-900 focus:outline-none focus:ring-gray-900 sm:text-sm"
                                                     />
                                                 </div>
-
                                                 <div className="col-span-4 sm:col-span-2">
                                                     <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
                                                         Dirección de correo electrónico
@@ -139,7 +126,6 @@ export default function Ejemplo() {
                                                         className="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-gray-900 focus:outline-none focus:ring-gray-900 sm:text-sm"
                                                     />
                                                 </div>
-
                                                 <div className="col-span-4 sm:col-span-1">
                                                     <label htmlFor="expiration-date" className="block text-sm font-medium text-gray-700">
                                                         Fecha de vencimiento
@@ -153,7 +139,6 @@ export default function Ejemplo() {
                                                         placeholder="MM / AA"
                                                     />
                                                 </div>
-
                                                 <div className="col-span-4 sm:col-span-1">
                                                     <label
                                                         htmlFor="security-code"
@@ -173,7 +158,6 @@ export default function Ejemplo() {
                                                         className="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-gray-900 focus:outline-none focus:ring-gray-900 sm:text-sm"
                                                     />
                                                 </div>
-
                                                 <div className="col-span-4 sm:col-span-2">
                                                     <label htmlFor="country" className="block text-sm font-medium text-gray-700">
                                                         País
@@ -189,7 +173,6 @@ export default function Ejemplo() {
                                                         <option>México</option>
                                                     </select>
                                                 </div>
-
                                                 <div className="col-span-4 sm:col-span-2">
                                                     <label htmlFor="postal-code" className="block text-sm font-medium text-gray-700">
                                                         Código postal
@@ -215,8 +198,6 @@ export default function Ejemplo() {
                                     </div>
                                 </form>
                             </section>
-
-                            {/* Plan */}
                             <section aria-labelledby="plan-heading">
                                 <form action="#" method="POST">
                                     <div className="shadow sm:overflow-hidden sm:rounded-md">
@@ -226,7 +207,6 @@ export default function Ejemplo() {
                                                     Plan
                                                 </h2>
                                             </div>
-
                                             <RadioGroup value={planSeleccionado} onChange={setPlanSeleccionado}>
                                                 <RadioGroup.Label className="sr-only"> Planes de precios </RadioGroup.Label>
                                                 <div className="relative -space-y-px rounded-md bg-white">
@@ -288,7 +268,6 @@ export default function Ejemplo() {
                                                     ))}
                                                 </div>
                                             </RadioGroup>
-
                                             <Switch.Group as="div" className="flex items-center">
                                                 <Switch
                                                     checked={facturacionAnualHabilitada}
@@ -323,8 +302,6 @@ export default function Ejemplo() {
                                     </div>
                                 </form>
                             </section>
-
-                            {/* Historial de facturación */}
                             <section aria-labelledby="billing-history-heading">
                                 <div className="bg-white pt-6 shadow sm:overflow-hidden sm:rounded-md">
                                     <div className="px-4 sm:px-6">
@@ -348,9 +325,6 @@ export default function Ejemplo() {
                                                                 <th scope="col" className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
                                                                     Cantidad
                                                                 </th>
-                                                                {/*
-                                  `relative` se agrega aquí debido a un error extraño en Safari que hace que los encabezados `sr-only` introduzcan desbordamiento en el cuerpo en dispositivos móviles.
-                                */}
                                                                 <th
                                                                     scope="col"
                                                                     className="relative px-6 py-3 text-left text-sm font-medium text-gray-500"

@@ -1,10 +1,13 @@
 import { UsersIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 export default function Stats() {
     return (
         <div className="relative bg-white  mb-20">
             <div className="h-56 bg-indigo-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
-                <img
+                <Image
+                    width="2000"
+                    height="2000"
                     className="h-full w-full object-cover"
                     src="img2.jpeg"
                     alt="Support team"
