@@ -288,14 +288,14 @@ export default function Navbar({ isActive, isActive2, userActive }: NavbarProps)
                                             <span className="mx-4 h-6 w-px bg-gray-200 lg:mx-6" aria-hidden="true" />
 
                                             <div className="flow-root">
-                                                <a href="#" className="group -m-2 flex items-center p-2">
+                                                <Link href="/cart" className="group -m-2 flex items-center p-2">
                                                     <ShoppingCartIcon
                                                         className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                                                         aria-hidden="true"
                                                     />
                                                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                                                     <span className="sr-only">items in cart, view bag</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

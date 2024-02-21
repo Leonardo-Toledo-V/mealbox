@@ -22,9 +22,9 @@ const subNavegacion = [
     { nombre: 'Integraciones', href: '#', icono: SquaresPlusIcon, actual: false },
 ]
 const planes = [
-    { nombre: 'Básico', precioMensual: 1119, precioAnual: 290, limite: 'Hasta 5 publicaciones de trabajo activas' },
-    { nombre: 'Premium', precioMensual: 1799, precioAnual: 990, limite: 'Hasta 25 publicaciones de trabajo activas' },
-    { nombre: 'Total', precioMensual: 1499, precioAnual: 2490, limite: 'Publicaciones de trabajo activas ilimitadas' },
+    { nombre: 'Básico', precioMensual: 1119, precioAnual: 290, limite: 'Hasta 2 comidas semanales' },
+    { nombre: 'Premium', precioMensual: 1799, precioAnual: 990, limite: 'Hasta 5 comidas semanales' },
+    { nombre: 'Total', precioMensual: 1499, precioAnual: 2490, limite: 'Hasta 3 comidas semanales' },
 ]
 const pagos = [
     {
