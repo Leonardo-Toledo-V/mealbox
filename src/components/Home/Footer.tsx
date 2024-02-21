@@ -41,12 +41,12 @@ export default function Footer() {
                                         type="text"
                                         autoComplete="email"
                                         required
-                                        className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-[#22874a] focus:outline-none focus:ring-1 focus:ring-[#22874a]"
+                                        className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-[#489a69] focus:outline-none focus:ring-1 focus:ring-[#489a69]"
                                     />
                                     <div className="mt-3 sm:mt-0 sm:ml-4 sm:flex-shrink-0">
                                         <button
                                             type="submit"
-                                            className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#22874a] py-2 px-4 text-base font-medium text-white shadow-sm hover:bg-[#22874a] focus:outline-none focus:ring-2 focus:ring-[#22874a] focus:ring-offset-2 focus:ring-offset-white"
+                                            className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#22874a] py-2 px-4 text-base font-medium text-white shadow-sm hover:bg-[#489a69] focus:outline-none focus:ring-2 focus:ring-[#489a69] focus:ring-offset-2 focus:ring-offset-white duration-300"
                                         >
                                             Regístrate
                                         </button>
@@ -62,7 +62,7 @@ export default function Footer() {
                                     alt=""
                                     className="h-full w-full object-cover object-center saturate-0 filter"
                                 />
-                                <div className="absolute inset-0 bg-[#22874a] bg-opacity-70" />
+                                <div className="absolute inset-0 bg-[#22874a] bg-opacity-70 hover:bg-opacity-60 duration-300" />
                             </div>
                             <div className="relative mx-auto max-w-sm text-center">
                                 <h3 className="text-2xl font-bold tracking-tight text-white">

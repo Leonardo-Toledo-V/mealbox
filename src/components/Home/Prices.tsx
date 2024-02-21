@@ -59,7 +59,7 @@ export default function Prices() {
                                                         className="block w-full rounded-lg border border-transparent bg-white px-6 py-3 text-center text-base font-medium text-[#22874a] hover:bg-gray-50 duration-300"
                                                         aria-describedby="tier-hobby"
                                                     >
-                                                        Comienza tu prueba
+                                                        Suscríbete
                                                     </a>
                                                 </div>
                                             </div>
@@ -115,7 +115,7 @@ export default function Prices() {
                                                     className="block w-full rounded-lg border border-transparent bg-[#22874a] px-6 py-4 text-center text-xl font-medium leading-6 text-white hover:bg-[#489a69] duration-300 "
                                                     aria-describedby="tier-growth"
                                                 >
-                                                    Comienza tu prueba
+                                                    Suscríbete
                                                 </a>
                                             </div>
                                         </div>
@@ -157,7 +157,7 @@ export default function Prices() {
                                                         className="block w-full rounded-lg border border-transparent bg-white px-6 py-3 text-center text-base font-medium text-[#22874a] hover:bg-gray-50 duration-300"
                                                         aria-describedby="tier-scale"
                                                     >
-                                                        Comienza tu prueba
+                                                        Suscríbete
                                                     </a>
                                                 </div>
                                             </div>

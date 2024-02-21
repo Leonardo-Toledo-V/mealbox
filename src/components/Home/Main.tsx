@@ -1,6 +1,7 @@
 import React from 'react'
 import Prices from '@/components/Home/Prices'
 import Stats from '@/components/Home/Stats'
+import Image from 'next/image';
 
 const offers = [
     { name: 'Personaliza tu caja', description: 'Crea tu propio plan personalizado', href: '#' },
@@ -59,8 +60,10 @@ export default function Main() {
                         </div>
                     </div>
                     <div className="h-48 w-full sm:h-64 lg:absolute lg:top-0 lg:right-0 lg:h-full lg:w-1/2">
-                        <img
-                            src="img1.jpeg"
+                        <Image
+                            width="1080"
+                            height="1080"
+                            src="/img1.jpeg"
                             alt=""
                             className="h-full w-full object-cover object-center"
                         />
