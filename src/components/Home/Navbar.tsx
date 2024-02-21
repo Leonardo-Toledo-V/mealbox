@@ -6,11 +6,15 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import Image from 'next/image'
 
+interface NavbarProps {
+    isActive?: boolean;
+    isActive2?: boolean;
+}
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
-export default function Navbar() {
+export default function Navbar({ isActive, isActive2 }: NavbarProps) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <>
@@ -212,7 +216,7 @@ export default function Navbar() {
                                 <div className="flex h-16 items-center justify-between">
                                     {/* Logo (lg+) */}
                                     <div className="hidden lg:flex lg:items-center">
-                                        <a href="#">
+                                        <Link href="/">
                                             <Image
                                                 width="628"
                                                 height="397"
@@ -220,7 +224,7 @@ export default function Navbar() {
                                                 src="/logo-white.png"
                                                 alt=""
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
 
                                     <div className="hidden h-full lg:flex">
@@ -229,14 +233,14 @@ export default function Navbar() {
                                                 <div className="relative flex">
                                                     <Link
                                                         href="/menus"
-                                                        className="relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out focus:border-b-[#22874a] focus:text-[#22874a] hover:text-gray-800 border-transparent text-gray-700" >
+                                                        className={`relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out ${isActive ? 'border-b-[#22874a] text-[#22874a]' : 'border-transparent text-gray-700'} hover:text-gray-800`}>
                                                         Menús y recetas
                                                     </Link>
                                                 </div>
                                                 <div className="relative flex">
                                                     <Link
                                                         href="/prices"
-                                                        className="relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out focus:border-b-[#22874a] focus:text-[#22874a] hover:text-gray-800 border-transparent text-gray-700" >
+                                                        className={`relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out ${isActive2 ? 'border-b-[#22874a] text-[#22874a]' : 'border-transparent text-gray-700'} hover:text-gray-800`}>
                                                         Precios
                                                     </Link>
                                                 </div>
@@ -273,10 +277,10 @@ export default function Navbar() {
                                             <div className="flex space-x-8">
 
                                                 <div className="flex">
-                                                    <a href="#" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
+                                                    <Link href="/settings" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
                                                         <span className="sr-only">Account</span>
                                                         <UserIcon className="h-6 w-6" aria-hidden="true" />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
 

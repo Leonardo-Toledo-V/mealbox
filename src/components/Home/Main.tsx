@@ -4,9 +4,9 @@ import Stats from '@/components/Home/Stats'
 import Image from 'next/image';
 
 const offers = [
-    { name: 'Personaliza tu caja', description: 'Crea tu propio plan personalizado', href: '#' },
-    { name: 'Programa de fidelidad', description: 'Obtén descuentos exclusivos', href: '#' },
-    { name: 'Envío express gratuito', description: 'Recibe tu primera caja con envío express', href: '#' },
+    { name: 'Personaliza tu caja', description: 'Crea tu propio plan personalizado' },
+    { name: 'Programa de fidelidad', description: 'Obtén descuentos exclusivos' },
+    { name: 'Envío express gratuito', description: 'Recibe tu primera caja con envío express' },
 ];
 
 export default function Main() {
@@ -22,13 +22,12 @@ export default function Main() {
                         >
                             {offers.map((offer) => (
                                 <li key={offer.name} className="flex flex-col">
-                                    <a
-                                        href={offer.href}
+                                    <div
                                         className="relative flex flex-1 flex-col justify-center bg-white py-6 px-4 text-center focus:z-10"
                                     >
                                         <p className="text-sm text-gray-500">{offer.name}</p>
                                         <p className="font-semibold text-gray-900">{offer.description}</p>
-                                    </a>
+                                    </div>
                                 </li>
                             ))}
                         </ul>
